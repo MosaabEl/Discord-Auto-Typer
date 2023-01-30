@@ -141,12 +141,7 @@ const discord = {
 
     },
 
-    /**
-     * username and password
-     * @param {string} username
-     * @param {string} password
-     * @return {Promise<void>}
-     */
+
 
     login: async (username, password) => {
         
@@ -200,36 +195,8 @@ const discord = {
             types('string', channelID);
             const CHANNELS_URL = `https://discord.com/channels/${serverID}/${channelID}`
 
-          //  await discord.page.goto(CHANNELS_URL, {
-
-          //  });
-
             await discord.page.waitFor(100000);
 
-         /*   async function initalStart () {
-                await discord.page.type('span[data-slate-object="text"]', "auto typer started.", {
-                    delay: 100
-                });
-
-                await discord.page.keyboard.press('Enter')
-
-                console.debug('Auto typer started ' + new Date() )
-
-            } */
-
-           // await initalStart();
-
-       /*    client.on("message", (message) => {
-            if (message.content === "Server active") {
-                message.channel.send(`I am Active in ${client.guilds.cache.size} Servers`);
-            }
-            if (message.content === "Server size") {
-                message.channel.send(`I am Active in ${client.guilds.cache.size} Servers`);
-            }
-            if (message.content === "Server ammount") {
-                message.channel.send(`I am Active in ${client.guilds.cache.size} Servers`);
-            }
-        }); */
         function shuffle(array) {
             let currentIndex = array.length,  randomIndex;
           
@@ -271,46 +238,7 @@ const discord = {
             function randomIntFromInterval(min, max) { 
                 return (Math.floor(Math.random() * (max - min + 1) + min))
               }    
-            
-                //tmpArrayOne.(rndMessage)
-                
-            /*    if (duplicatePrevent.length <= 5) {
-                    for (i=0; i<=duplicatePrevent.length; i++) {
-                        if (duplicatePrevent[i] == rndMessage) {
-                            rndMessage = words[Math.floor(Math.random() * words.length)]
-                            if (duplicatePrevent[i] == rndMessage) {
-                                rndMessage = words[Math.floor(Math.random() * words.length)]
-                            }
-                        }
-                    }
-                    duplicatePrevent.push(rndMessage);
-                }
-                else {
-                    for (i=0; i<=duplicatePrevent.length; i++) {
-                        if (duplicatePrevent[i] == rndMessage) {
-                            rndMessage = words[Math.floor(Math.random() * words.length)]
-                            if (duplicatePrevent[i] == rndMessage) {
-                                rndMessage = words[Math.floor(Math.random() * words.length)]
-                            }
-                            }
-                    
-                    }
-                    duplicatePrevent.pop();
-                    duplicatePrevent.push(rndMessage);    
-                    
-                } */
-           /*     await discord.page.type('span[data-slate-object="text"]', rndMessage, {
-                    delay: 100
-                });
-
-                await discord.page.keyboard.press('Enter')
-
-                logCount++ */
-
-                // this logs the time the message was sent at and the total message count
-                
-            
-
+            // this logs the time the message was sent at and the total message count
             // change the first number for minutes
             // 3 * 60 * 1000 = 180000ms === 3 minutes
             
