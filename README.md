@@ -7,3 +7,22 @@ To edit the automated script you must edit discord.js in the words[] array. Ever
 Edit BASE_URL in discord.js to determine which channel the bot will move to and communicate in.
 
 If you want to change and customize the time between each message sent by the bot (You can also make it variable), then scroll to the bottom of discord.js and change the numbers in the randomIntFromInterval parenthesis.
+
+HOW TO RUN:
+
+Enter into terminal:
+____________________
+npm i
+____________________
+
+Then to ensure you log into your discord account:
+__________________________________________________
+Edit index.js to enter your username and password
+__________________________________________________
+
+Then run the bot by entering:
+_____________________________
+node .
+_____________________________
+
+Enjoy!
